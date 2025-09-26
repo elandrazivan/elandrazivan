@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elandra Zivan - Python Automation Specialist</title>
+    <meta name="description" content="Professional Python scripting and automation solutions. Specialized in data processing, web scraping, and custom automation tools.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gradient-to-br from-gray-900 via-blue-900 to-gray-900 text-white overflow-x-hidden">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-black/20 backdrop-blur-lg border-b border-white/10 z-50 transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center space-x-2">
+                    <div class="w-10 h-10 bg-gradient-to-r from-green-400 to-blue-500 rounded-lg flex items-center justify-center">
+                        <i class="fab fa-python text-xl"></i>
+                    </div>
+                    <span class="text-xl font-bold bg-gradient-to-r from-green-400 to-blue-400 bg-clip-text text-transparent">Elandra Zivan</span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#home" class="nav-link text-gray-300 hover:text-white transition-colors duration-300">Home</a>
+                    <a href="#about" class="nav-link text-gray-300 hover:text-white transition-colors duration-300">About</a>
+                    <a href="#skills" class="nav-link text-gray-300 hover:text-white transition-colors duration-300">Skills</a>
+                    <a href="#services" class="nav-link text-gray-300 hover:text-white transition-colors duration-300">Services</a>
+                    <a href="#contact" class="nav-link text-gray-300 hover:text-white transition-colors duration-300">Contact</a>
+                </div>
+                <button class="md:hidden text-white" id="mobile-menu-btn">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div class="md:hidden bg-black/30 backdrop-blur-lg border-t border-white/10 hidden" id="mobile-menu">
+            <div class="px-4 py-2 space-y-2">
+                <a href="#home" class="block py-2 text-gray-300 hover:text-white transition-colors duration-300">Home</a>
+                <a href="#about" class="block py-2 text-gray-300 hover:text-white transition-colors duration-300">About</a>
+                <a href="#skills" class="block py-2 text-gray-300 hover:text-white transition-colors duration-300">Skills</a>
+                <a href="#services" class="block py-2 text-gray-300 hover:text-white transition-colors duration-300">Services</a>
+                <a href="#contact" class="block py-2 text-gray-300 hover:text-white transition-colors duration-300">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen flex items-center justify-center relative overflow-hidden">
+        <div class="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="none" fill-rule="evenodd"%3E%3Cg fill="%23ffffff" fill-opacity="0.02"%3E%3Ccircle cx="30" cy="30" r="2"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')] opacity-20"></div>
+        <div class="relative z-10 text-center max-w-5xl mx-auto px-4">
+            <div class="mb-8">
+                <div class="terminal-window bg-gray-900/50 backdrop-blur-lg rounded-lg p-6 mx-auto max-w-2xl border border-gray-700/50 shadow-2xl">
+                    <div class="flex items-center mb-4 space-x-2">
+                        <div class="w-3 h-3 bg-red-500 rounded-full"></div>
+                        <div class="w-3 h-3 bg-yellow-500 rounded-full"></div>
+                        <div class="w-3 h-3 bg-green-500 rounded-full"></div>
+                        <span class="text-gray-400 text-sm ml-4">terminal</span>
+                    </div>
+                    <div class="text-left font-mono text-sm">
+                        <div class="text-green-400">$ python3 introduce_developer.py</div>
+                        <div class="mt-2">
+                            <span class="text-blue-400">class</span> <span class="text-yellow-400">PythonSpecialist</span><span class="text-white">:</span>
+                        </div>
+                        <div class="ml-4">
+                            <span class="text-blue-400">def</span> <span class="text-green-400">__init__</span><span class="text-white">(</span><span class="text-orange-400">self</span><span class="text-white">):</span>
+                        </div>
+                        <div class="ml-8">
+                            <span class="text-orange-400">self</span><span class="text-white">.name = </span><span class="text-green-300">"Elandra Zivan"</span>
+                        </div>
+                        <div class="ml-8">
+                            <span class="text-orange-400">self</span><span class="text-white">.role = </span><span class="text-green-300 typing-animation">"Python Automation Specialist"</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h1 class="text-6xl md:text-8xl font-bold mb-6 bg-gradient-to-r from-green-400 via-blue-400 to-purple-400 bg-clip-text text-transparent leading-tight">
+                Elandra Zivan
+            </h1>
+            <p class="text-xl md:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed">
+                Transforming complex business processes into elegant Python solutions. 
+                Specialized in automation, data processing, and scalable scripting architectures.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <button class="bg-gradient-to-r from-green-500 to-blue-600 hover:from-green-600 hover:to-blue-700 px-8 py-4 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">
+                    <i class="fas fa-code mr-2"></i>
+                    View My Work
+                </button>
+                <button class="border border-white/30 hover:border-white/60 px-8 py-4 rounded-lg font-semibold transition-all duration-300 hover:bg-white/10 backdrop-blur-sm">
+                    <i class="fas fa-download mr-2"></i>
+                    Download Resume
+                </button>
+            </div>
+            <div class="mt-12 flex justify-center space-x-6">
+                <a href="https://github.com/elandrazivan" target="_blank" class="text-2xl text-gray-400 hover:text-white transition-colors duration-300 transform hover:scale-110">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://x.com/EZivran" target="_blank" class="text-2xl text-gray-400 hover:text-white transition-colors duration-300 transform hover:scale-110">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://www.instagram.com/elandra_zivan/" target="_blank" class="text-2xl text-gray-400 hover:text-white transition-colors duration-300 transform hover:scale-110">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.tiktok.com/@elandrazivran" target="_blank" class="text-2xl text-gray-400 hover:text-white transition-colors duration-300 transform hover:scale-110">
+                    <i class="fab fa-tiktok"></i>
+                </a>
+                <a href="#contact" class="text-2xl text-gray-400 hover:text-white transition-colors duration-300 transform hover:scale-110">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+        </div>
+        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <a href="#about" class="text-white/60 hover:text-white transition-colors duration-300">
+                <i class="fas fa-chevron-down text-2xl"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-black/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-green-400 to-blue-400 bg-clip-text text-transparent">
+                    About Me
+                </h2>
+                <div class="w-24 h-1 bg-gradient-to-r from-green-400 to-blue-400 mx-auto rounded-full"></div>
+            </div>
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6">
+                    <p class="text-lg text-gray-300 leading-relaxed">
+                        With over 7 years of experience in Python development and automation, I specialize in creating efficient, scalable solutions that transform manual processes into streamlined workflows.
+                    </p>
+                    <p class="text-lg text-gray-300 leading-relaxed">
+                        My expertise spans across data processing, web scraping, API integration, and custom automation tools. I've helped businesses save thousands of hours through intelligent scripting solutions.
+                    </p>
+                    <div class="grid sm:grid-cols-2 gap-6 mt-8">
+                        <div class="bg-gradient-to-r from-gray-800/50 to-gray-900/50 p-6 rounded-lg border border-gray-700/50 backdrop-blur-sm">
+                            <div class="text-3xl font-bold text-green-400 mb-2">150+</div>
+                            <div class="text-gray-300">Automation Scripts</div>
+                        </div>
+                        <div class="bg-gradient-to-r from-gray-800/50 to-gray-900/50 p-6 rounded-lg border border-gray-700/50 backdrop-blur-sm">
+                            <div class="text-3xl font-bold text-blue-400 mb-2">50+</div>
+                            <div class="text-gray-300">Happy Clients</div>
+                        </div>
+                        <div class="bg-gradient-to-r from-gray-800/50 to-gray-900/50 p-6 rounded-lg border border-gray-700/50 backdrop-blur-sm">
+                            <div class="text-3xl font-bold text-purple-400 mb-2">10K+</div>
+                            <div class="text-gray-300">Hours Saved</div>
+                        </div>
+                        <div class="bg-gradient-to-r from-gray-800/50 to-gray-900/50 p-6 rounded-lg border border-gray-700/50 backdrop-blur-sm">
+                            <div class="text-3xl font-bold text-yellow-400 mb-2">7+</div>
+                            <div class="text-gray-300">Years Experience</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="bg-gradient-to-r from-gray-800/30 to-gray-900/30 p-8 rounded-xl border border-gray-700/50 backdrop-blur-sm">
+                        <h3 class="text-2xl font-bold mb-6 text-center bg-gradient-to-r from-green-400 to-blue-400 bg-clip-text text-transparent">
+                            My Philosophy
+                        </h3>
+                        <div class="space-y-4">
+                            <div class="flex items-start space-x-3">
+                                <i class="fas fa-lightbulb text-yellow-400 mt-1"></i>
+                                <div>
+                                    <h4 class="font-semibold text-white">Innovation First</h4>
+                                    <p class="text-gray-400">Always seeking creative solutions to complex problems</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start space-x-3">
+                                <i class="fas fa-code text-green-400 mt-1"></i>
+                                <div>
+                                    <h4 class="font-semibold text-white">Clean Code</h4>
+                                    <p class="text-gray-400">Writing maintainable, scalable, and efficient solutions</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start space-x-3">
+                                <i class="fas fa-users text-blue-400 mt-1"></i>
+                                <div>
+                                    <h4 class="font-semibold text-white">Client Focus</h4>
+                                    <p class="text-gray-400">Understanding business needs to deliver real value</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-green-400 to-blue-400 bg-clip-text text-transparent">
+                    Technical Expertise
+                </h2>
+                <div class="w-24 h-1 bg-gradient-to-r from-green-400 to-blue-400 mx-auto rounded-full"></div>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Core Python -->
+                <div class="skill-card bg-gradient-to-br from-gray-800/40 to-gray-900/40 p-6 rounded-xl border border-gray-700/50 backdrop-blur-sm hover:border-green-400/50 transition-all duration-300">
+                    <div class="text-center mb-6">
+                        <i class="fab fa-python text-5xl text-green-400 mb-4"></i>
+                        <h3 class="text-xl font-bold text-white">Core Python</h3>
+                    </div>
+                    <div class="space-y-3">
+                        <div class="text-sm text-gray-300">Advanced Scripting</div>
+                        <div class="text-sm text-gray-300">OOP Design</div>
+                        <div class="text-sm text-gray-300">Error Handling</div>
+                        <div class="text-sm text-gray-300">Performance Optimization</div>
+                    </div>
+                </div>
+
+                <!-- Automation Tools -->
+                <div class="skill-card bg-gradient-to-br from-gray-800/40 to-gray-900/40 p-6 rounded-xl border border-gray-700/50 backdrop-blur-sm hover:border-blue-400/50 transition-all duration-300">
+                    <div class="text-center mb-6">
+                        <i class="fas fa-cogs text-5xl text-blue-400 mb-4"></i>
+                        <h3 class="text-xl font-bold text-white">Automation</h3>
+                    </div>
+                    <div class="space-y-3">
+                        <div class="text-sm text-gray-300">Selenium WebDriver</div>
+                        <div class="text-sm text-gray-300">BeautifulSoup</div>
+                        <div class="text-sm text-gray-300">Task Scheduling</div>
+                        <div class="text-sm text-gray-300">Process Automation</div>
+                    </div>
+                </div>
+
+                <!-- Data Processing -->
+                <div class="skill-card bg-gradient-to-br from-gray-800/40 to-gray-900/40 p-6 rounded-xl border border-gray-700/50 backdrop-blur-sm hover:border-purple-400/50 transition-all duration-300">
+                    <div class="text-center mb-6">
+                        <i class="fas fa-database text-5xl text-purple-400 mb-4"></i>
+                        <h3 class="text-xl font-bold text-white">Data Processing</h3>
+                    </div>
+                    <div class="space-y-3">
+                        <div class="text-sm text-gray-300">Pandas & NumPy</div>
+                        <div class="text-sm text-gray-300">Data Analysis</div>
+                        <div class="text-sm text-gray-300">CSV/Excel Processing</div>
+                        <div class="text-sm text-gray-300">Statistical Computing</div>
+                    </div>
+                </div>
+
+                <!-- Infrastructure -->
+                <div class="skill-card bg-gradient-to-br from-gray-800/40 to-gray-900/40 p-6 rounded-xl border border-gray-700/50 backdrop-blur-sm hover:border-orange-400/50 transition-all duration-300">
+                    <div class="text-center mb-6">
+                        <i class="fas fa-server text-5xl text-orange-400 mb-4"></i>
+                        <h3 class="text-xl font-bold text-white">Infrastructure</h3>
+                    </div>
+                    <div class="space-y-3">
+                        <div class="text-sm text-gray-300">Linux Administration</div>
+                        <div class="text-sm text-gray-300">Docker Containers</div>
+                        <div class="text-sm text-gray-300">Cloud Deployment</div>
+                        <div class="text-sm text-gray-300">CI/CD Pipelines</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-black/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-green-400 to-blue-400 bg-clip-text text-transparent">
+                    Services
+                </h2>
+                <div class="w-24 h-1 bg-gradient-to-r from-green-400 to-blue-400 mx-auto rounded-full"></div>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Custom Automation -->
+                <div class="service-card bg-gradient-to-br from-gray-800/40 to-gray-900/40 p-8 rounded-xl border border-gray-700/50 backdrop-blur-sm hover:border-green-400/50 transition-all duration-300 group">
+                    <div class="text-center mb-6">
+                        <i class="fas fa-robot text-5xl text-green-400 mb-4 group-hover:scale-110 transition-transform duration-300"></i>
+                        <h3 class="text-2xl font-bold text-white mb-4">Custom Automation Scripts</h3>
+                        <p class="text-gray-300 leading-relaxed">
+                            Tailor-made Python solutions to automate repetitive tasks, streamline workflows, and increase productivity across your organization.
+                        </p>
+                    </div>
+                    <ul class="space-y-2 text-gray-400">
+                        <li class="flex items-center"><i class="fas fa-check text-green-400 mr-2"></i>Task Scheduling & Cron Jobs</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-400 mr-2"></i>File Processing Automation</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-400 mr-2"></i>Workflow Integration</li>
+                    </ul>
+                </div>
+
+                <!-- Data Processing -->
+                <div class="service-card bg-gradient-to-br from-gray-800/40 to-gray-900/40 p-8 rounded-xl border border-gray-700/50 backdrop-blur-sm hover:border-blue-400/50 transition-all duration-300 group">
+                    <div class="text-center mb-6">
+                        <i class="fas fa-chart-line text-5xl text-blue-400 mb-4 group-hover:scale-110 transition-transform duration-300"></i>
+                        <h3 class="text-2xl font-bold text-white mb-4">Data Processing & Analysis</h3>
+                        <p class="text-gray-300 leading-relaxed">
+                            Transform raw data into actionable insights with advanced data processing, cleaning, and analysis using Python's powerful libraries.
+                        </p>
+                    </div>
+                    <ul class="space-y-2 text-gray-400">
+                        <li class="flex items-center"><i class="fas fa-check text-blue-400 mr-2"></i>ETL Pipeline Development</li>
+                        <li class="flex items-center"><i class="fas fa-check text-blue-400 mr-2"></i>Statistical Analysis</li>
+                        <li class="flex items-center"><i class="fas fa-check text-blue-400 mr-2"></i>Report Generation</li>
+                    </ul>
+                </div>
+
+                <!-- Web Scraping -->
+                <div class="service-card bg-gradient-to-br from-gray-800/40 to-gray-900/40 p-8 rounded-xl border border-gray-700/50 backdrop-blur-sm hover:border-purple-400/50 transition-all duration-300 group">
+                    <div class="text-center mb-6">
+                        <i class="fas fa-spider text-5xl text-purple-400 mb-4 group-hover:scale-110 transition-transform duration-300"></i>
+                        <h3 class="text-2xl font-bold text-white mb-4">Web Scraping Solutions</h3>
+                        <p class="text-gray-300 leading-relaxed">
+                            Extract valuable data from websites and APIs efficiently while respecting robots.txt and implementing proper rate limiting.
+                        </p>
+                    </div>
+                    <ul class="space-y-2 text-gray-400">
+                        <li class="flex items-center"><i class="fas fa-check text-purple-400 mr-2"></i>Dynamic Content Extraction</li>
+                        <li class="flex items-center"><i class="fas fa-check text-purple-400 mr-2"></i>Anti-Bot Bypass Techniques</li>
+                        <li class="flex items-center"><i class="fas fa-check text-purple-400 mr-2"></i>Data Validation & Cleaning</li>
+                    </ul>
+                </div>
+
+                <!-- API Integration -->
+                <div class="service-card bg-gradient-to-br from-gray-800/40 to-gray-900/40 p-8 rounded-xl border border-gray-700/50 backdrop-blur-sm hover:border-yellow-400/50 transition-all duration-300 group">
+                    <div class="text-center mb-6">
+                        <i class="fas fa-plug text-5xl text-yellow-400 mb-4 group-hover:scale-110 transition-transform duration-300"></i>
+                        <h3 class="text-2xl font-bold text-white mb-4">API Integration</h3>
+                        <p class="text-gray-300 leading-relaxed">
+                            Seamlessly connect different systems and services through robust API integrations and custom middleware solutions.
+                        </p>
+                    </div>
+                    <ul class="space-y-2 text-gray-400">
+                        <li class="flex items-center"><i class="fas fa-check text-yellow-400 mr-2"></i>REST API Development</li>
+                        <li class="flex items-center"><i class="fas fa-check text-yellow-400 mr-2"></i>Third-party Integrations</li>
+                        <li class="flex items-center"><i class="fas fa-check text-yellow-400 mr-2"></i>Authentication & Security</li>
+                    </ul>
+                </div>
+
+                <!-- System Modernization -->
+                <div class="service-card bg-gradient-to-br from-gray-800/40 to-gray-900/40 p-8 rounded-xl border border-gray-700/50 backdrop-blur-sm hover:border-red-400/50 transition-all duration-300 group">
+                    <div class="text-center mb-6">
+                        <i class="fas fa-sync-alt text-5xl text-red-400 mb-4 group-hover:scale-110 transition-transform duration-300"></i>
+                        <h3 class="text-2xl font-bold text-white mb-4">Legacy System Modernization</h3>
+                        <p class="text-gray-300 leading-relaxed">
+                            Upgrade outdated systems and processes with modern Python solutions while maintaining data integrity and business continuity.
+                        </p>
+                    </div>
+                    <ul class="space-y-2 text-gray-400">
+                        <li class="flex items-center"><i class="fas fa-check text-red-400 mr-2"></i>Code Refactoring</li>
+                        <li class="flex items-center"><i class="fas fa-check text-red-400 mr-2"></i>Migration Planning</li>
+                        <li class="flex items-center"><i class="fas fa-check text-red-400 mr-2"></i>Performance Optimization</li>
+                    </ul>
+                </div>
+
+                <!-- Consultation -->
+                <div class="service-card bg-gradient-to-br from-gray-800/40 to-gray-900/40 p-8 rounded-xl border border-gray-700/50 backdrop-blur-sm hover:border-cyan-400/50 transition-all duration-300 group">
+                    <div class="text-center mb-6">
+                        <i class="fas fa-lightbulb text-5xl text-cyan-400 mb-4 group-hover:scale-110 transition-transform duration-300"></i>
+                        <h3 class="text-2xl font-bold text-white mb-4">Consultation & Code Review</h3>
+                        <p class="text-gray-300 leading-relaxed">
+                            Expert guidance on Python best practices, architecture decisions, and code optimization to ensure your projects are scalable and maintainable.
+                        </p>
+                    </div>
+                    <ul class="space-y-2 text-gray-400">
+                        <li class="flex items-center"><i class="fas fa-check text-cyan-400 mr-2"></i>Architecture Planning</li>
+                        <li class="flex items-center"><i class="fas fa-check text-cyan-400 mr-2"></i>Code Quality Assessment</li>
+                        <li class="flex items-center"><i class="fas fa-check text-cyan-400 mr-2"></i>Performance Auditing</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-black/20">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-green-400 to-blue-400 bg-clip-text text-transparent">
+                    Let's Build Something Amazing
+                </h2>
+                <div class="w-24 h-1 bg-gradient-to-r from-green-400 to-blue-400 mx-auto rounded-full"></div>
+                <p class="text-gray-300 text-lg mt-4 max-w-2xl mx-auto">
+                    Ready to automate your workflows and boost productivity? Let's discuss your project requirements.
+                </p>
+            </div>
+            <div class="grid lg:grid-cols-2 gap-12">
+                <div class="space-y-8">
+                    <div class="flex items-start space-x-4">
+                        <div class="w-12 h-12 bg-gradient-to-r from-green-400 to-blue-500 rounded-lg flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-envelope text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-white mb-2">Email</h3>
+                            <p class="text-gray-300">elandrazivan@gmail.com</p>
+                            <p class="text-gray-400 text-sm">Response within 24 hours</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start space-x-4">
+                        <div class="w-12 h-12 bg-gradient-to-r from-green-400 to-blue-500 rounded-lg flex items-center justify-center flex-shrink-0">
+                            <i class="fab fa-github text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-white mb-2">GitHub</h3>
+                            <p class="text-gray-300">github.com/elandrazivan</p>
+                            <p class="text-gray-400 text-sm">Code samples & projects</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start space-x-4">
+                        <div class="w-12 h-12 bg-gradient-to-r from-green-400 to-blue-500 rounded-lg flex items-center justify-center flex-shrink-0">
+                            <i class="fab fa-twitter text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-white mb-2">Twitter/X</h3>
+                            <p class="text-gray-300">@EZivran</p>
+                            <p class="text-gray-400 text-sm">Tech updates & insights</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="space-y-6" onsubmit="handleContactForm(event)">
+                    <div class="terminal-form bg-gray-900/50 backdrop-blur-lg rounded-lg p-6 border border-gray-700/50">
+                        <div class="flex items-center mb-4 space-x-2">
+                            <div class="w-3 h-3 bg-red-500 rounded-full"></div>
+                            <div class="w-3 h-3 bg-yellow-500 rounded-full"></div>
+                            <div class="w-3 h-3 bg-green-500 rounded-full"></div>
+                            <span class="text-gray-400 text-sm ml-4">contact_form.py</span>
+                        </div>
+                        <div class="space-y-4">
+                            <div>
+                                <label class="block text-green-400 font-mono text-sm mb-2"># Your Name</label>
+                                <input type="text" name="name" required class="w-full bg-gray-800/50 border border-gray-600 rounded px-3 py-2 text-white font-mono focus:border-green-400 focus:outline-none transition-colors" placeholder="Enter your name">
+                            </div>
+                            <div>
+                                <label class="block text-green-400 font-mono text-sm mb-2"># Email Address</label>
+                                <input type="email" name="email" required class="w-full bg-gray-800/50 border border-gray-600 rounded px-3 py-2 text-white font-mono focus:border-green-400 focus:outline-none transition-colors" placeholder="your.email@domain.com">
+                            </div>
+                            <div>
+                                <label class="block text-green-400 font-mono text-sm mb-2"># Project Type</label>
+                                <select name="project_type" class="w-full bg-gray-800/50 border border-gray-600 rounded px-3 py-2 text-white font-mono focus:border-green-400 focus:outline-none transition-colors">
+                                    <option value="">Select project type</option>
+                                    <option value="automation">Automation Script</option>
+                                    <option value="data_processing">Data Processing</option>
+                                    <option value="web_scraping">Web Scraping</option>
+                                    <option value="api_integration">API Integration</option>
+                                    <option value="consultation">Consultation</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-green-400 font-mono text-sm mb-2"># Message</label>
+                                <textarea name="message" rows="4" required class="w-full bg-gray-800/50 border border-gray-600 rounded px-3 py-2 text-white font-mono focus:border-green-400 focus:outline-none transition-colors resize-none" placeholder="Describe your project requirements..."></textarea>
+                            </div>
+                            <button type="submit" class="w-full bg-gradient-to-r from-green-500 to-blue-600 hover:from-green-600 hover:to-blue-700 px-6 py-3 rounded font-semibold transition-all duration-300 transform hover:scale-105">
+                                <i class="fas fa-paper-plane mr-2"></i>
+                                Send Message
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 bg-black/40 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <div class="w-10 h-10 bg-gradient-to-r from-green-400 to-blue-500 rounded-lg flex items-center justify-center">
+                            <i class="fab fa-python text-xl"></i>
+                        </div>
+                        <span class="text-xl font-bold bg-gradient-to-r from-green-400 to-blue-400 bg-clip-text text-transparent">Elandra Zivan</span>
+                    </div>
+                    <p class="text-gray-400 leading-relaxed">
+                        Python Automation Specialist dedicated to transforming business processes through intelligent scripting solutions.
+                    </p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold text-white mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#about" class="text-gray-400 hover:text-white transition-colors duration-300">About</a></li>
+                        <li><a href="#skills" class="text-gray-400 hover:text-white transition-colors duration-300">Skills</a></li>
+                        <li><a href="#services" class="text-gray-400 hover:text-white transition-colors duration-300">Services</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-white transition-colors duration-300">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold text-white mb-4">Connect</h3>
+                    <div class="flex space-x-4">
+                        <a href="https://github.com/elandrazivan" target="_blank" class="text-2xl text-gray-400 hover:text-white transition-colors duration-300 transform hover:scale-110">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://x.com/EZivran" target="_blank" class="text-2xl text-gray-400 hover:text-white transition-colors duration-300 transform hover:scale-110">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://www.instagram.com/elandra_zivan/" target="_blank" class="text-2xl text-gray-400 hover:text-white transition-colors duration-300 transform hover:scale-110">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.tiktok.com/@elandrazivran" target="_blank" class="text-2xl text-gray-400 hover:text-white transition-colors duration-300 transform hover:scale-110">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
+                        <a href="#contact" class="text-2xl text-gray-400 hover:text-white transition-colors duration-300 transform hover:scale-110">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center">
+                <p class="text-gray-400">
+                    &copy; 2024 Elandra Zivan. All rights reserved. Built with Python-inspired design principles.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
